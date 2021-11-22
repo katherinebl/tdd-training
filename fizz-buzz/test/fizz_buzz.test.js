@@ -1,10 +1,11 @@
-const FizzBuzz = require('../src/fizz_buzz');
+const FizzBuzz = require("../src/fizz_buzz");
 
-describe('FizzBuzz', () => {
-  it('change_this_name', () => {
+describe("FizzBuzz", () => {
+  it("return an array", () => {
+    const fizzBuzz = new FizzBuzz(); //Given
 
-    new FizzBuzz();
+    const result = fizzBuzz.execute(); //When
 
-    expect(true).toBe(true);
+    expect(result).toStrictEqual([]); //Then
   });
 });
