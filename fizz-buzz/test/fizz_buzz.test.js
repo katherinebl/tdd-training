@@ -6,6 +6,13 @@ describe("FizzBuzz", () => {
 
     const result = fizzBuzz.execute(); //When
 
-    expect(result).toStrictEqual([]); //Then
+    expect(Array.isArray(result)).toBe(true); //Then
+  });
+  it("return an array of 100 items", () => {
+    const fizzBuzz = new FizzBuzz();
+
+    const result = fizzBuzz.execute();
+
+    expect(result.length).toBe(100);
   });
 });

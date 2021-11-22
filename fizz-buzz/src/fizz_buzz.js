@@ -1,6 +1,6 @@
 class FizzBuzz {
   execute() {
-    return new Array();
+    return [...Array(100).keys()];
   }
 }
 
