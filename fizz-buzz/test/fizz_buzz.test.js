@@ -15,4 +15,13 @@ describe("FizzBuzz", () => {
 
     expect(result.length).toBe(100);
   });
+  it("return FizzBuzz for multiples of 15", () => {
+    const fizzBuzz = new FizzBuzz();
+
+    const result = fizzBuzz.execute();
+
+    expect(result[15]).toBe('FizzBuzz')
+    expect(result[30]).toBe('FizzBuzz')
+    expect(result[45]).toBe('FizzBuzz')
+  })
 });
